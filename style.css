@@ -138,3 +138,13 @@ body{
 	margin: 10px;
 	text-align: center;
 }
+/*---------------------Style for Content-----------*/
+
+/*---------------------Style for Slide-----------*/
+.slide{
+	border-bottom: 2px solid #fff;
+	height: 400px;
+	line-height: 400px;
+	background: rgba(34,89,146,0.5);
+	text-align: center;
+}
