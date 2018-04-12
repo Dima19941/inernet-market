@@ -246,3 +246,55 @@ body{
 	padding-top: 0px;/* так же что б ДИВ прилегал к верхнему диву*/
 
 }
+/*--------------------------------------------from Products----------------------------*/
+
+/*--------------------------------------------Breadcrumbs---------------*/
+
+.breadcrumbs{
+	display: block;
+	padding-left: 15px;
+	padding-top: 30px;
+}
+.breadcrumbs a{
+	text-decoration: none;
+	color: rgb(171,192,221);
+}
+.breadcrumbs div{
+	float: left;
+}
+.breadcrumbs div:last-child{
+	border-bottom: 1px rgb(171,192,221) solid;
+}
+/*------------------------------From Products-header----------------------------*/
+.container-product{
+	margin-top: 15px;
+	position: relative;
+}
+.container-product-header{
+	height: 70px;
+	line-height: 70px;
+}
+.caption{
+	color: #fff;
+}
+.select{
+	padding-top: 5px;
+	display:block;
+	text-align: right;
+}
+.select-form{
+	-webkit-appearance:none;
+	border: none;
+	background: transparent;
+	border: 1px solid #fff;
+	background: rgb(44,112,183);
+	width: 270px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 21px;
+	color: #fff;
+	padding-left: 20px;
+}
+.select-form:focus option{
+	outline: none;
+}
