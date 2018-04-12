@@ -121,3 +121,20 @@ body{
 /* внешний отступ относительно родительского div.row*/
 	padding: 5px;
 }
+/*-------------for Basket----------*/
+
+.basket{
+/* задаём display: inline-block; для того что б 
+див стал в одну линию с формой*/
+	display: inline-block;
+	background: #fff;
+/* Отступ от дива с формой(замерял расстояние в макете)*/
+	margin-left: 30px;
+}
+.basket a{
+	height: 40px;
+	line-height: 40px;
+	width: 40px;
+	margin: 10px;
+	text-align: center;
+}
