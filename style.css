@@ -11,3 +11,64 @@ body{
 .container{
 	padding:25px 0px;
 }
+/*-------------------Style For Header-------------------*/
+.header{
+	background: rgba(255,255,255,0.75);
+}
+
+.row:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+/*--------------for logo in header--------*/
+.logo{
+	text-align: center;
+	height: 50px;
+}
+[class*="col-"]{
+	float: left;
+	display:block;
+}
+/*-------------------For Navigation in header-----*/
+.menu>li{
+	width: 25%;
+	border-right: 1px solid #2c70b7;
+	float: left;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+}
+.menu>li:first-child {
+	border-left:1px solid #2c70b7;
+}
+.menu li a {
+	text-decoration: none;
+	font-size: 21px;
+	text-align: center;
+	display: block;
+}
+.submenu{
+	display: none;
+}
+.li:hover a{
+	color: #fff;
+	background: #2c70b7;
+}
+.li:hover ul{
+	width: 200%;
+	display: block;
+	background: #2c70b7;
+	text-align: left;
+}
+.li:hover ul>li>a{
+	color:#fff;
+	padding-left: 20px;
+	text-align: left;
+}
+.li ul>li>a:hover{
+	color:#2c70b7;
+	background: #fff;
+	display: block;
+	text-align: left;
+}
