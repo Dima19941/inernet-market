@@ -148,3 +148,101 @@ body{
 	background: rgba(34,89,146,0.5);
 	text-align: center;
 }
+/*--------------------Style for Checkbox-------------*/
+.checkbox{
+	margin-top: 0px; /* задаём для того что б этот див прилипал к предидущему(div.slide) */
+	background:rgba(255,255,255,0.25) ;
+	border-right: 1px solid #fff;
+	font-size: 21px;
+	line-height: 21px;
+
+}
+
+.input-checkbox{
+	display: none;/* прячем настоящий чекбокс*/ 
+
+}
+.custom-checkbox{
+
+	position: relative;/* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать 
+псевдоэлемент внютри нашего кастомного чекбокса*/
+	width: 10px;/* обязательно задаём ширину*/
+	height: 10px;/* обязательно задаём высоту*/
+	border: 1px solid #fff;
+}
+.custom-checkbox, .label{
+	display: inline-block;/* обязательно дать этим элементам дисплей инлайн-блок иначе они не будут коректно отображатся*/
+	vertical-align: middle;
+}
+
+.input-checkbox:checked + .custom-checkbox::before {/* Если реальный чекбокс у нас отмечен, 
+	то тогда добавляем данный признак и к нашему фейковому чекбоксу  */
+	content: "";/* Добавляем наш псевдоэлемент */
+	display: block;/* Делаем его блочным элементом */
+	position: absolute;/* Позиционируем его абсолютным образом */
+	/* Задаем расстояние от верхней, левой границы */
+	top: 0px;
+	left:0px;
+	background: #fff;/* заднийфон чекбокса при нажатии*/
+	width: 10px;/* обязательно задаём ширину*/
+	height: 10px;/* обязательно задаём высоту*/
+}
+
+.ul {
+	color: #fff;/* цвет шрифта*/
+
+}
+.ul h3{
+	
+	margin-top: 30px;/* отступы между разделами в чекбокс панеле*/
+	margin-bottom: 30px;
+}
+.ul h3:first-child{ /* отступы между разделами в чекбокс панеле*/
+	margin-top: 30px;
+}
+.ul form label{
+	padding-left: 0px;
+	padding-top: 15px;/* отступы между  чекбоксами панеле*/
+}
+.ul span{
+			font-size: 21px;
+}
+/* -----------------------------------------From Button in checkbox----------------------------------*/
+.checkbox-button{
+	/*Скидываем стили по умолчанию для кнопки*/
+	border: none;
+	background: transparent;
+	outline: none;
+	-webkit-appearance:none;
+	padding: 0;
+	/*Даём новые стили для кнопки*/
+	border: 1px solid #fff;
+	background: rgb(44,112,183);
+	color: #fff;
+	width: 100%;
+	height: 50px;
+
+} 
+.checkbox-button:active {
+	background: #fff;
+	color: rgb(44,112,183);
+}
+.div-button{
+	/*выравниваем родительский элемент кнопки что б она распологалась по центру панели*/
+	text-align: center;
+	margin: 30px;
+}
+.a{
+	display: block;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	text-align: center;
+}
+.a a{
+	text-decoration: none;
+	color: #fff;
+}
+.second{
+	padding-top: 0px;/* так же что б ДИВ прилегал к верхнему диву*/
+
+}
